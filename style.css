@@ -96,6 +96,8 @@ html {
   --size-f-title: 3.75rem;
 }
 
+/* //////////////////////////////////////////////// - INDEX - /////////////////////////////////////////////////////////////// */
+
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
@@ -181,7 +183,8 @@ body {
 }
 
 .btn__section2,
-.btn__section3 {
+.btn__section3,
+.btn__section2--about {
   background: var(--color-f-primary);
   color: var(--color-f-secondary);
   align-self: center;
@@ -193,7 +196,8 @@ body {
 }
 
 .btn__section2:hover:after,
-.btn__section3:hover:after {
+.btn__section3:hover:after,
+.btn__section2--about:hover:after {
   background-color: #18181d;
 }
 
@@ -453,7 +457,7 @@ a {
 .hero {
   display: flex;
   min-height: 600px;
-  background: url(./img/hero/hero-background.jpg);
+  background: url(/img/hero/hero-background.jpg);
   background-color: rgba(0, 0, 0, 0.393);
   background-repeat: no-repeat;
   background-position: center;
@@ -744,7 +748,7 @@ a {
 .section__divider {
   width: 100%;
   height: 20vh;
-  background: url(./img//section--divider/section--divider.jpg);
+  background: url(/img//section--divider/section--divider.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -803,7 +807,7 @@ a {
   height: 45vh;
 }
 .section__3--img {
-  background: url(./img/testimonials/testimonials.jpg);
+  background: url(/img/testimonials/testimonials.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -918,9 +922,164 @@ a {
 }
 /* End Of Footer////////////////////////////////////*/
 
+/* //////////////////////////////////////////////// - About - /////////////////////////////////////////////////////////////// */
+
+/* Section 1 & 2 & 3////////////////////////////////////*/
+.section__1--about,
+.section__2--about,
+.section__3--about,
+.section__4--about {
+  padding: 4em 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 2em;
+}
+
+.section__1--about *,
+.section__2--about *,
+.section__3--about *,
+.section__4--about * {
+  grid-column: 1 / -1;
+}
+
+.section__1--about--info,
+.section__2--about--info,
+.section__3--about--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+}
+
+.section__1--about--subtitle p,
+.section__2--about--subtitle p,
+.section__3--about--subtitle p,
+.team--subtitle p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-f-primary);
+  opacity: 0.7;
+}
+
+.section__1--about--title h2,
+.section__2--about--title h2,
+.section__3--about--title h2,
+.team__name h3,
+.section__4--about--title h2 {
+  font-size: 2.12rem;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+.section__1--about--description p,
+.section__2--about--description p,
+.section__2--about--content p,
+.team__description p {
+  color: var(--color-f-primary);
+  opacity: 0.7;
+  line-height: 1.6em;
+  padding-bottom: 1em;
+  line-height: 26px;
+}
+
+.section__1--about--image1 {
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 40% 25%;
+}
+
+.section__1--about--image2 {
+  height: 460px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 70% 50%;
+}
+
+.section__1--about--image3{
+  display: none;
+}
+
+.section__2--about--content p {
+  margin-bottom: 1em;
+}
+
+.section__3--about--info {
+  height: 8vh;
+}
+
+.section__3--about--title h2,
+.section__4--about--title h2 {
+  font-size: 1.875rem;
+}
+
+.section__3--about--team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1em;
+  height: 30vh;
+}
+
+.team--img {
+  width: 100px;
+  height: 100px;
+}
+
+.team__name h3 {
+  font-size: 1.5rem;
+}
+
+.section__4--about {
+  height: fit-content;
+}
+.section__4--content ul,
+.section__4--content p {
+  position: relative;
+  padding-left: 50px;
+  color: var(--color-f-primary);
+  opacity: 0.7;
+}
+
+.section__4--content p {
+  margin-bottom: 2em;
+}
+
+.section__4--content ul {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.section__4--content ul::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 5px;
+  width: 15px;
+  background-color: #af9387;
+}
+
+.section__4--image img {
+  object-fit: cover;
+  height: 360px;
+  width: 100%;
+}
+/*End Of Section 1 & 2 & 3////////////////////////////////////*/
+/* //////////////////////////////////////////////// - About - /////////////////////////////////////////////////////////////// */
+
 /* //////////////////////////////////////////////// - Media Queries - /////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////// - 480 - 767 - /////////////////////////////////////////////////////////////// */
 @media (min-width: 480px) {
+  /* //////////////////////////////////////////////// - Index - /////////////////////////////////////////////////////////////// */
   /* Hero ////////////////////////////////////*/
   .hero__main {
     width: fit-content;
@@ -979,11 +1138,72 @@ a {
   .section__divider {
     height: 25vh;
   }
+  /* //////////////////////////////////////////////// - Index - /////////////////////////////////////////////////////////////// */
+
+  /* //////////////////////////////////////////////// - About - /////////////////////////////////////////////////////////////// */
+  /* Section 1 ////////////////////////////////////*/
+  .section__1--about {
+    justify-items: center;
+    border: 2px solid red;
+    text-align: center;
+    padding: 4em 1.25em;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5em;
+  }
+  .section__1--about--info {
+    grid-column: 1 / -1;
+  }
+
+  .section__1--about--image1 {
+    grid-column: 1 / 4;
+  }
+  .section__1--about--image2 {
+    object-position: 50% 50%;
+    grid-column: 4 / -1;
+  }
+  /* End Of Section 1 ////////////////////////////////////*/
+  /* Section 2 ////////////////////////////////////*/
+  .section__2--about{
+    grid-template-columns: repeat(6, 1fr);
+    padding: 4em 1.25em;
+  }
+  .section__2--about--btn{
+    grid-column: 1 / 5;
+  }
+
+  .section__2--about--info,
+  .section__2--about--content {
+    grid-column: 1 / -1;
+  }
+  /* End Of Section 2 ////////////////////////////////////*/
+  /* Section 3 ////////////////////////////////////*/
+  .section__3--about{
+    grid-template-columns: repeat(6, 1fr);
+    padding: 4em 1.25em;
+  }
+
+  .section__3--about * {
+    grid-column: 1 / -1;
+  }
+ 
+  /* End Of Section 3 ////////////////////////////////////*/
+  /* Section 4 ////////////////////////////////////*/
+  .section__4--about{
+    grid-template-columns: repeat(6, 1fr);
+    padding: 4em 1.25em;
+  }
+
+  .section__4--about * {
+    grid-column: 1 / -1;
+  }
+  /* End Of Section 4 ////////////////////////////////////*/
+  /* //////////////////////////////////////////////// - About - /////////////////////////////////////////////////////////////// */
 }
 /* //////////////////////////////////////////////// - 480 - 767 - /////////////////////////////////////////////////////////////// */
 
 /* //////////////////////////////////////////////// - 768 - 991 - /////////////////////////////////////////////////////////////// */
 @media (min-width: 768px) {
+  /* //////////////////////////////////////////////// - Index - /////////////////////////////////////////////////////////////// */
   /* Hero ////////////////////////////////////*/
   .hero__title {
     font-size: 5rem;
@@ -1168,10 +1388,12 @@ a {
   }
 
   /* End Of Footer////////////////////////////////////*/
+  /* //////////////////////////////////////////////// - Index - /////////////////////////////////////////////////////////////// */
 }
 /* //////////////////////////////////////////////// - 768 - 991 - /////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////// - 992 - 1253 - /////////////////////////////////////////////////////////////// */
 @media (min-width: 992px) {
+  /* //////////////////////////////////////////////// - Index - /////////////////////////////////////////////////////////////// */
   /* Navbar  ////////////////////////////////////*/
   .nav__container {
     padding: 0 2.25em;
@@ -1404,5 +1626,6 @@ a {
 
   /* End Of Section 4 ////////////////////////////////////*/
 }
+/* //////////////////////////////////////////////// - Index - /////////////////////////////////////////////////////////////// */
 
 /* //////////////////////////////////////////////// - 992 - 1253 - /////////////////////////////////////////////////////////////// */
