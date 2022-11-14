@@ -206,7 +206,7 @@ body {
 .btn__section3 {
   font-size: 0.9rem;
   width: 100%;
-  height: 8vh;
+  padding: 1.em;
   display: flex;
   margin-top: 3.5em;
   justify-content: space-between;
@@ -1871,7 +1871,7 @@ a {
     padding: 4em 2.25em;
     width: 100%;
     max-width: 1200px;
-    height: 70vh;
+    min-height: 100%;
     grid-template-columns: repeat(12, 1fr);
     position: relative;
   }
@@ -1896,7 +1896,7 @@ a {
     height: 80%;
   }
   .section__3--img {
-    height: 100%;
+    height: 700px;
     max-height: 100%;
   }
 
@@ -1911,7 +1911,7 @@ a {
     top: 0;
     right: 0;
     bottom: auto;
-    height: 680px;
+    height: 700px;
   }
 
   /*~ End Of Section 3 ////////////////////////////////////*/
