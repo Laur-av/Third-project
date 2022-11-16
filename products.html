@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luma</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon//apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="./img/favicon//site.webmanifest" />
+    <!-- Favicon -->
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -52,72 +58,84 @@
       </div>
     </nav>
     <!--End of Navbar /////////////////////////////////-->
-
-    <!-- Hero /////////////////////////////////////////-->
-    <div class="hero">
-      <div class="hero__main">
-        <h1 class="hero__title">Stylish modern <span>lighting options</span></h1>
-        <button onclick="parent.location='products.html'" class="btn hero__btn">Shop the fall collection</button>
+    <!--Hero /////////////////////////////////-->
+    <div class="hero__products">
+      <div class="hero__products--subtitle">
+        <p>Browse our collections</p>
+      </div>
+      <div class="hero__products--title">
+        <h1>Our Products</h1>
+      </div>
+      <div class="hero__products--description">
+        <p>
+          Create inspiring, beautifully illuminated rooms. Review our wide selection of stylish contemporary lamps for living room, bedroom, bath and kitchen—and get enlightened about modern design.
+        </p>
       </div>
     </div>
-
-    <!-- Logos /////////////////////////////////////////-->
-    <div class="logos">
-      <div class="logos__logo"><img src="./img/logos/sony-logo.svg" alt="logo" /></div>
-      <div class="logos__logo"><img src="./img/logos/webflow-logo.svg" alt="logo" /></div>
-      <div class="logos__logo"><img src="./img/logos/samsung-logo.svg" alt="logo" /></div>
-      <div class="logos__logo"><img src="./img/logos/logitech-logo.svg" alt="logo" /></div>
-      <div class="logos__logo"><img src="./img/logos/lenovo-logo.svg" alt="logo" /></div>
-      <div class="logos__logo"><img src="./img/logos/waitrose-logo.svg" alt="logo" /></div>
+    <!--End of Hero /////////////////////////////////-->
+    <!--Section 1 /////////////////////////////////-->
+    <div class="section__1--products">
+      <div class="section__1--products--info">
+        <div class="section__1--products--title">
+          <h2>Explore Categories</h2>
+        </div>
+        <div class="section__1--products--description">
+          <p>Lighting does not just illuminate your home. It actually creates an ambiance and functions like any other piece of decor.</p>
+        </div>
+      </div>
+        <div class="section__1--products--wall-ceiling">
+          <div class="section__1--wall-ceiling--title">
+            <p>Wall + Ceiling</p>
+          </div>
+          <div class="products__links">
+            <a href="#">
+              <img class="section__1--products--img" src="./img--products/img--category/section__1--wall-ceiling.jpeg" alt="" />
+              <div class="overlay"></div>
+              <button class="btn btn--products--category">View Category</button>
+            </a>
+          </div>
+        </div>
+        <div class="section__1--products--floor">
+          <div class="section__1--floor--title">
+            <p>Floor</p>
+          </div>
+          <div class="products__links">
+            <a href="#">
+              <img class="section__1--products--img" src="./img--products/img--category/section__1--floor.jpg" alt="" />
+              <div class="overlay"></div>
+              <button class="btn btn--products--category">View Category</button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="section__1--products--table">
+          <div class="section__1--table--title">
+            <p>Table</p>
+          </div>
+          <div class="products__links">
+            <a href="#">
+              <img class="section__1--products--img" src="./img--products/img--category/section__1--table.jpg" alt="" />
+              <div class="overlay"></div>
+              <button class="btn btn--products--category">View Category</button>
+            </a>
+          </div>
+        </div>
     </div>
-    <!--End of Logos /////////////////////////////////////////-->
+    <!--End of Section 1 /////////////////////////////////-->
 
-    <!--Section 1 /////////////////////////////////////////-->
-    <div class="section__1">
-      <h2 class="section__1--title">The right light can transform any environment</h2>
-      <div class="section__1--promo1">
-        <a href="#">
-          <img src="./img/promo/promo1__section1.jpg" alt="living room with lights" />
-          <div class="overlay"></div>
-          <button onclick="parent.location='products.html'" class="btn btn--promo">View Product</button>
-        </a>
+    <!--Section 2 -- PRODUCTS /////////////////////////////////-->
+    <div class="section__2--products-main">
+      <div class="section__2--products--main--title">
+        <h2>Products</h2>
       </div>
+      <div class="section__2--products--products">
 
-      <div class="section__1--promo2">
-        <a href="#">
-          <img src="./img/promo/promo2__section1.jpg" alt="lights" />
-          <div class="overlay"></div>
-          <button class="btn btn--promo">View Product</button>
-        </a>
-      </div>
-
-      <div class="section__1--subtitle">
-        <h3>Meet the Belmont, by Pablo Designs</h3>
-      </div>
-
-      <div class="section__1--description">
-        <p>By fusing the highest technical sensibilities with the most appropriate material palette, Pablo is able to create unique, timeless designs with the power to transform any environment.</p>
-      </div>
-
-      <div class="section__1--discoverbtn">
-        <button class="btn section__1--btn">Discover more products</button>
-      </div>
-    </div>
-    <!--End Of Section 1 /////////////////////////////////////////-->
-    <!--Products /////////////////////////////////////////-->
-    <div class="section__2">
-      <div class="section__2--title_and_subtitle">
-        <p class="section__2--subtitle">Shop Lighting</p>
-        <h3 class="section__2--title">Stylish modern lighting options</h3>
-      </div>
-
-      <div class="section__2--products">
-        <div class="section__2--product-1">
+        <div class="section__2--products--product-1">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-giraffa.jpeg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -129,12 +147,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-2">
+        <div class="section__2--products--product-2">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-Solis.jpeg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -146,12 +164,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-3">
+        <div class="section__2--products--product-3">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-Corner.jpeg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -163,12 +181,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-4">
+        <div class="section__2--products--product-4">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-cielo.jpeg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -180,12 +198,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-5">
+        <div class="section__2--products--product-5">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-uma.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -197,12 +215,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-6">
+        <div class="section__2--products--product-6">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-contour.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -214,12 +232,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-7">
+        <div class="section__2--products--product-7">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-circa.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -231,12 +249,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-8">
+        <div class="section__2--products--product-8">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-bola-sphere.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -248,12 +266,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-9">
+        <div class="section__2--products--product-9">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-bola-disc.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -265,12 +283,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-10">
+        <div class="section__2--products--product-10">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-belmont.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -282,12 +300,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-11">
+        <div class="section__2--products--product-11">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-bel-occhio.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -299,12 +317,12 @@
             </div>
           </div>
         </div>
-        <div class="section__2--product-12">
+        <div class="section__2--products--product-12">
           <div class="products__links">
             <a href="#">
               <img src="./img/products/product-bola-halo.jpg" alt="" />
               <div class="overlay"></div>
-              <button class="btn btn--promo">View Product</button>
+              <button class="btn btn--products--product">View Product</button>
             </a>
           </div>
           <div class="product__wrap">
@@ -317,29 +335,54 @@
           </div>
         </div>
       </div>
-      <div class="section__2--btn">
-        <button onclick="parent.location='products.html'" class="btn btn__section2">View all products</button>
-      </div>
-    </div>
-    <!--End Of Products /////////////////////////////////////////-->
-    <!--Image Divider/////////////////////////////////////////-->
-    <div class="section__divider"></div>
-    <!--End Of Image Divider/////////////////////////////////////////-->
-    <!--Testimonials /////////////////////////////////////////-->
-    <div class="section__3">
-      <div class="section__3--left">
-        <div class="section__3--title">
-          <p>What they say</p>
+      <div class="section__2--products--sort">
+        <div class="section__2--sort--category">
+          <div class="section__2--sort--title">
+            <p>Categories</p>
+          </div>
+          <div class="section__2--sort--items">
+            <a href="#">All Items</a>
+            <a href="#">Wall + Ceiling</a>
+            <a href="#">Floor</a>
+            <a href="#">Table</a>
+          </div>
         </div>
-        <div class="section__3-testimonial">
-          <p>“We’ve been long fans of the modern, yet inviting lighting that Pablo Designs has to offer.”</p>
-        </div>
-        <div class="section__3--btn"><button onclick="parent.location='products.html'" class="btn btn__section3">Shop the fall collection</button></div>
-      </div>
-      <div class="section__3--right"><div class="section__3--img"></div></div>
-      <div class="section__3--background"></div>
+          <div class="section__2--sort--popular">
+            <div class="section__2--sort--title">
+              <p>Most popular Items</p>
+            </div>
+            <div class="section__2--sort--items">
+              <a href="#">Giraffa</a>
+              <a href="#">Solis</a>
+              <a href="#">Corner Office</a>
+              <a href="#">Cielo</a>
+              <a href="#">Uma Mini</a>
+              <a href="#">Contour</a>
+              <a href="#">Circa</a>
+              <a href="#">Bola Sphere</a>
+              <a href="#">Bola Disc</a>
+              <a href="#">Belmont</a>
+              <a href="#">Bel Occhio</a>
+              <a href="#">Bola Halo</a>
+            </div>
+          </div>
+        
     </div>
-    <!--End Of Testimonials /////////////////////////////////////////-->
+    </div>
+    <!--End of Section 2 -- PRODUCTS /////////////////////////////////-->
+
+    <!--Section 3/////////////////////////////////////////-->
+    <div class="section__3--products">
+      <div class="section__3--products--title">
+        <h2>We're Social</h2>
+      </div>
+      <div class="section__3--products--description">
+        <p>Join our community of lamp lovers like you who know the impact great lighting can have on a room.
+        </p>
+      </div>
+      <button class="btn btn__section2">Find us on social</button>
+    </div>
+    <!--End of Section 3/////////////////////////////////////////-->
     <!--More Info/////////////////////////////////////////-->
     <div class="section__4">
       <div class="section__4--gallery">
