@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luma</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <!-- Navbar /////////////////////////////////-->
+    <nav class="nav__container">
+      <div class="nav__left">
+        <img src="../img/img--index/navbar/logo.svg" class="nav__logo" alt="Luma logo." />
+      </div>
+
+      <div class="nav__right">
+        <div class="hamburger__menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="icon__count">
+          <a href="#" class="nav__shoppingbag"><img class="shoppingbag__icon" src="../img/img--index/navbar/shoppingbag.svg" alt="Shopping bag icon" /></a>
+          <p class="count__bag">0</p>
+        </div>
+
+        <div class="shoppingcart">
+          <div class="shoppingcart__header">
+            <p>Your Cart</p>
+            <p><img class="sc__close" src="../img/img--index/navbar/close.svg" alt="close icon" /></p>
+          </div>
+
+          <div class="items__container">
+            <div class="items">
+              <p>No items found</p>
+            </div>
+            <button class="btn shopping__btn">Keep Shopping</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown__menu">
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="../index.html" class="nav__link hover-animation">Home</a></li>
+          <li class="nav__item"><a href="../products.html" class="nav__link hover-animation">Our products</a></li>
+          <li class="nav__item"><a href="../about.html" class="nav__link hover-animation">About</a></li>
+          <li class="nav__item"><a href="../contact.html" class="nav__link hover-animation">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--End of Navbar /////////////////////////////////-->
+    <!--Section 1 /////////////////////////////////-->
+    <div class="section__1--each-product">
+        <div class="section__1--each-product--galerry">
+            <div class="section__1--gallery--main">
+                <img id="main--img" src="../img/img--eachproduct/product-7/product-7--main.jpg" alt="">
+            </div>
+            <div class="section__1--gallery--secondary">
+                <img onclick="expandImg(this)" src="../img/img--eachproduct/product-7/product-7--1.jpg" alt="">
+                <img onclick="expandImg(this)" src="../img/img--eachproduct/product-7/product-7--2.jpg" alt="">
+                <img onclick="expandImg(this)" src="../img/img--eachproduct/product-7/product-7--3.jpg" alt="">
+                <img onclick="expandImg(this)" src="../img/img--eachproduct/product-7/product-7--4.jpg" alt="">
+            </div>
+        </div>
+        <div class="section__1--each-product--description">
+            <div class="section__1--description--tag">
+                <p>Premium</p>
+            </div>
+            <div  class="section__1--description--title">
+                <h1>Circa</h1>
+            </div>
+            <div class="section__1--description--description">
+                <p>In designing Circa, the Pablo Studio designers wanted to create a product that was revolutionary yet familiar. </p>
+            </div>
+            <div class="section__1--description--price">
+                <p>$ 398.99 USD</p>
+            </div>
+
+            <div class="section__1--description--button">
+              <button class="btn btn--description--button">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!--End of Section 1 /////////////////////////////////-->
+    
+
+
+
+
+    <!-- Footer ////////////////////////////////////////-->
+    <hr class="hr" />
+    <div class="footer">
+      <div class="footer__logo">
+        <img src="../img/img--index/navbar/logo.svg" alt="" />
+      </div>
+      <div class="footer__pages">
+        <p class="title">Pages</p>
+        <a href="#" class="content">Homepage</a>
+        <a href="#" class="content">All Products</a>
+        <a href="#" class="content">About</a>
+        <a href="#" class="content">Contact</a>
+      </div>
+      <div class="footer__social">
+        <p class="title">Social Networks</p>
+        <a href="#" class="content">Instagram</a>
+        <a href="#" class="content">Twitter</a>
+        <a href="#" class="content">Facebook</a>
+        <a href="#" class="content">Youtube</a>
+      </div>
+    </div>
+    <hr class="hr" />
+    <!--End Of Footer ////////////////////////////////////////-->
+    <script src="../src/script.js"></script>
+    <script type="module" src="../src/data.js"></script>
+    <script type="module" src="../src/eachproduct.js"></script>
+  </body>
+</html>
